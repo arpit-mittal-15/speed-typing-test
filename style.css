@@ -1,0 +1,60 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: hidden;
+  color:white;
+  font-size: 2vw;
+  background-color: rgb(83, 82, 82);
+}
+header{
+  height: 10vh;
+  width: 95%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#logo-area{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 25px;
+}
+h1{
+  font-size: 2.3vw;
+}
+#main-options{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 25px;
+}
+.main-options{
+  height: 100%;
+  justify-content: end;
+  align-items: end;
+}
+.focus{
+  opacity: 0.6;
+}
+.focus:hover{
+  opacity: 1;
+}
+main{
+  height: 78vh;
+  width: 95%;
+}
+footer{
+  height: 10vh;
+  width: 95%;
+}
+.typed-letter{
+  color: white;
+  background-color: blue;
+}
+#test-cursor{
+  height: 200px;
+  background-color: green;
+  width: 300px;
+}
