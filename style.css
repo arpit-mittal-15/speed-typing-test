@@ -63,9 +63,11 @@ main{
 #test-para{
   position: absolute;
   text-align: justify;
+  font-size: 2vw;
+  color: rgb(117, 117, 117);
   letter-spacing: 2px;
   word-spacing: 10px;
-  
+  line-height: 4.5vh;
 }
 #test-restart{
   height: 100%;
@@ -82,7 +84,6 @@ main{
 #test-review{
   height: 100%;
   width: 100%;
-  font-size: 5vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -104,13 +105,17 @@ footer{
   color: white;
   background-color: rgb(255, 165, 0, 0.5);
 }
+.typed-para{
+  color: white;
+}
 .wrong-letter{
   color: white;
   background-color: red;
 }
 #test-cursor{
   display: inline-block;
-  height: 28px;
+  height: 2.5vw;
+  margin-bottom: -10px;
   background-color: rgb(71, 254, 71);
   width: 3px;
   animation: blink 1s steps(2,start) infinite;

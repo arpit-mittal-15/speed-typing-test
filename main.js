@@ -61,7 +61,8 @@ function textCheck(keyValue){
       const element = document.getElementById("test-para");
       const text = element.textContent;
       const letters = text.split('');
-      letters[count+1] = `<span id="test-cursor"></span><span class="typed-letter">${letters[count+1]}</span>`;
+      letters[0] = `<span class="typed-para">${letters[0]}`;
+      letters[count+1] = `</span><span id="test-cursor"></span><span class="typed-letter">${letters[count+1]}</span>`;
       element.innerHTML = letters.join('');
       count++;
     }
@@ -69,7 +70,8 @@ function textCheck(keyValue){
       const element = document.getElementById("test-para");
       const text = element.textContent;
       const letters = text.split('');
-      letters[count] = `<span id="test-cursor"></span><span class="wrong-letter">${letters[count]}</span>`;
+      letters[0] = `<span class="typed-para">${letters[0]}`;
+      letters[count] = `</span><span id="test-cursor"></span><span class="wrong-letter">${letters[count]}</span>`;
       element.innerHTML = letters.join('');
       wrong++;
     }
@@ -87,6 +89,7 @@ function showReview(){
   }
   document.getElementById("your-speed").innerHTML = `<span class="review-heading">WPM</span>${speed}`;
   document.getElementById("your-accuracy").innerHTML = `<span class="review-heading">acc</span>${accuracy}%`;
+  document.getElementById("timer").innerHTML = `<span class="review-heading">time</span>${startTime}`;
   document.getElementById("your-raw-speed").innerHTML = `<span class="review-heading">raw</span>${raw}`;
   document.getElementById("your-characters").innerHTML = `<span class="review-heading">characters</span>${total}/${count}/${wrong}`;
 }
