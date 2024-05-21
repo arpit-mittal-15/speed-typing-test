@@ -4,8 +4,8 @@ const para = [
 
 let count = 0;
 let wrong = 0;
-let startTime = 10;
-let time = 10;
+let startTime = 30;
+let time = 30;
 
 
 

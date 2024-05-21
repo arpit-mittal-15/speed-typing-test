@@ -23,7 +23,9 @@ header{
   gap: 25px;
 }
 h1{
-  font-size: 2.3vw;
+  font-size: 7.5vh;
+  text-decoration: underline;
+  text-decoration-color: orange;
 }
 #main-options{
   display: flex;
@@ -61,6 +63,9 @@ main{
 #test-para{
   position: absolute;
   text-align: justify;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  
 }
 #test-restart{
   height: 100%;
@@ -97,7 +102,7 @@ footer{
 }
 .typed-letter{
   color: white;
-  background-color: blue;
+  background-color: rgb(255, 165, 0, 0.5);
 }
 .wrong-letter{
   color: white;
