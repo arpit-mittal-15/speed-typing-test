@@ -87,9 +87,14 @@ function showReview(){
     accuracy = Math.round((count/total)*1000)/10;
     raw = Math.round(((total/5)/startTime)*600)/10;
   }
-  document.getElementById("your-speed").innerHTML = `<span class="review-heading">WPM</span>${speed}`;
-  document.getElementById("your-accuracy").innerHTML = `<span class="review-heading">acc</span>${accuracy}%`;
-  document.getElementById("timer").innerHTML = `<span class="review-heading">time</span>${startTime}`;
-  document.getElementById("your-raw-speed").innerHTML = `<span class="review-heading">raw</span>${raw}`;
-  document.getElementById("your-characters").innerHTML = `<span class="review-heading">characters</span>${total}/${count}/${wrong}`;
+  document.getElementById("your-speed").innerHTML = 
+    `<span class="review-heading">WPM</span>${speed}`;
+  document.getElementById("your-accuracy").innerHTML = 
+    `<span class="review-heading">acc</span>${accuracy}%`;
+  document.getElementById("timer").innerHTML = 
+    `<span class="review-heading">time</span>${startTime}`;
+  document.getElementById("your-raw-speed").innerHTML = 
+    `<span class="review-heading">raw</span>${raw}`;
+  document.getElementById("your-characters").innerHTML = 
+    `<span class="review-heading">characters</span>${total}/${count}/${wrong}`;
 }

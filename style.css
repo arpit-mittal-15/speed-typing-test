@@ -64,7 +64,7 @@ main{
   position: absolute;
   text-align: justify;
   font-size: 2vw;
-  color: rgb(117, 117, 117);
+  color: rgb(154, 154, 154);
   letter-spacing: 2px;
   word-spacing: 10px;
   line-height: 4.5vh;
@@ -102,7 +102,6 @@ footer{
   width: 95%;
 }
 .typed-letter{
-  color: white;
   background-color: rgb(255, 165, 0, 0.5);
 }
 .typed-para{
